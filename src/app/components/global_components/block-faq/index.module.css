@@ -1,0 +1,280 @@
+.index {
+	position: relative;
+}
+
+.mdl_impressions_title {
+	background: #fff;
+	position: relative;
+	min-height: 60px;
+	overflow: hidden;
+}
+
+.mldg1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	z-index: 1;
+	/* background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("./line2.jpg");
+	background-attachment: scroll; */
+}
+
+.linemld1,
+.linemld2,
+.linemld3 {
+	height: 33.333333%;
+}
+
+.linemld1 {
+	/* background: #d24e44; */
+	/* border-bottom: 1px solid #00000026; */
+}
+
+.linemld2 {
+	/* background: #eedb71; */
+	/* border-bottom: 1px solid #00000026; */
+	/* background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("./line2.jpg");
+	background-attachment: scroll; */
+	background: #000;
+}
+
+.linemld3 {
+	/* background: #008f93; */
+	height: 34%;
+}
+
+.mldg2 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 100;
+	transform: translateX(-50%);
+}
+
+.mldg2img {
+	max-width: 100px;
+}
+
+.linemldcontent {
+	padding: 0 0 0 1em;
+	margin: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	white-space: nowrap;
+}
+
+.webline1,
+.webline2,
+.webline3 {
+	height: 33.333333%;
+	background: #fff;
+	transform: skew(-10deg);
+	width: calc(100% + 4em);
+	position: absolute;
+	left: -2em;
+	z-index: -1;
+}
+
+.webline3 {
+	height: 34%;
+	bottom: 0;
+	left: -1.5em;
+}
+
+.webline1 {
+	top: 0;
+	left: 0em;
+}
+
+.webline2 {
+	top: 0%;
+	height: 100%;
+	left: -1.5em;
+	transform: skew(-15deg);
+}
+
+.webline1,
+.webline3 {
+	display: none;
+}
+
+.cnth2 {
+	font-weight: 900;
+	font-size: 2.5rem;
+	line-height: 0.9;
+	margin-top: 0.5rem;
+	position: relative;
+	text-align: center;
+	margin-bottom: 0;
+	transform: skew(-10deg);
+}
+
+@media (min-width: 768px) {
+	.mdl_impressions_title {
+		min-height: 70px;
+	}
+
+	.mldg2img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	.cnth2 {
+		font-size: 3.5rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.mdl_impressions_title {
+		min-height: 100px;
+	}
+
+	.cnth2 {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.cnth2 {
+		font-size: 4.5rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.cnth2 {
+		font-size: 5rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	.cnth2 {
+		font-size: 5.5rem;
+	}
+}
+
+.mldg2img {
+	max-height: 70px;
+	margin: 0.5rem 0;
+	max-width: 100%;
+}
+
+.mldg2img {
+	transform: skew(10deg);
+}
+
+.mdl_content {
+	overflow: hidden;
+	padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+	.mdl_content {
+		padding: 6rem 0;
+	}
+}
+
+@media (min-width: 992px) {
+	.mdl_content {
+		padding: 8rem 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.mdl_content {
+		padding: 10rem 0;
+	}
+}
+
+.mdl_content img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.mdl_content .imghomep {
+	display: none;
+}
+
+@media (min-width: 992px) {
+	.mdl_content .imghomep {
+		display: block;
+	}
+}
+
+.mdl_content h2 {
+	font-weight: 900;
+	font-size: 2.5rem;
+	margin-top: 0;
+	position: relative;
+	color: #000;
+	margin-bottom: 2rem !important;
+	font-style: italic;
+}
+
+.mdl_content p {
+	font-size: 1.5rem;
+}
+
+.mdl_impressions_info h3 {
+	font-size: 2rem;
+	color: #000;
+	z-index: 10;
+	text-transform: uppercase;
+	margin-top: 2rem !important;
+	position: relative;
+}
+
+.mdl_impressions_info h4 {
+	/* color: #d24e44; */
+	position: relative;
+	z-index: 10;
+	margin-top: 0 !important;
+	margin-bottom: 3rem !important;
+	text-transform: uppercase;
+}
+
+.mdl_impressions_info h5 {
+	margin: 0 0 1rem 0 !important;
+	/* color: #008f93; */
+	line-height: 1.5rem !important;
+	min-height: 3rem;
+}
+
+.mdl_impressions_info dl dd {
+	font-family: "Neue Kabel";
+}
+
+.mdl_impressions_info dl dt {
+	font-family: "Neue Kabel";
+}
+
+.mdl_impressions_info dl {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+	width: 100%;
+	/* border-bottom: 1px solid rgba(0, 0, 0, 0.15); */
+	/* padding-bottom: 1rem; */
+}
+
+.mdl_impressions_info dl:last-child {
+	border-bottom: none;
+}

@@ -1,0 +1,43 @@
+.core {
+	@apply flex min-h-screen flex-col h-screen;
+}
+
+.Layout_BG {
+	@apply bg-gray-200;
+}
+
+.Layout_Main {
+	@apply h-full;
+}
+
+.Layout_Content {
+	@apply flex flex-row border-t-4 border-gray-300 h-full relative;
+}
+
+.Layout_Content_Inner {
+	@apply w-full h-full overflow-y-auto font-light bg-gray-200;
+}
+
+.Layout_Content_Inner_Content {
+	@apply py-3 px-3;
+}
+
+.Table {
+	@apply w-full text-sm text-left rtl:text-right whitespace-nowrap;
+}
+
+.Table__TH {
+	@apply text-xs uppercase bg-gray-100 whitespace-nowrap;
+}
+
+.Table__TH_TD {
+	@apply px-3 py-3 whitespace-nowrap;
+}
+
+.Table__TH_Check {
+	@apply w-4 h-4 text-black bg-white border-gray-300 focus:ring-black focus:ring-2 rounded;
+}
+
+.Table__TH_UnCheck {
+	@apply w-4 h-4 text-black bg-white border-gray-300 focus:ring-black focus:ring-2 rounded;
+}

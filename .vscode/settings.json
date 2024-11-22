@@ -1,0 +1,48 @@
+{
+    "editor.tabSize": 4,
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": true,
+    "editor.renderWhitespace": "all",
+    "editor.insertSpaces": false,
+    "editor.wordWrap": "on",
+    "editor.codeActionsOnSave": [
+        "source.addMissingImports",
+        "source.fixAll.eslint",
+        "source.fixAll.tslint",
+        "source.fixAll.stylelint",
+        "source.fixAll.jest",
+    ],
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "search.exclude": {
+        "package-lock.json": true,
+        "yarn.lock": true,
+        "node_modules": true,
+        "coverage": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "[dockerignore]": {
+        "editor.formatOnSave": false,
+        "editor.tabSize": 1
+    },
+    "[json][jsonc][yaml]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript][typescript][typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[scss][css][sass]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features",
+    },
+}

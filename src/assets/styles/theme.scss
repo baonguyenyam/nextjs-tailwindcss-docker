@@ -1,0 +1,179 @@
+// SCSS Variables
+$primaryColor: #18191a !default;
+$secondaryColor: #242526 !default;
+$tertiaryColor: #9aa0a6 !default;
+$quaternaryColor: #6d7175 !default;
+
+[data-theme="dark"] {
+	::selection {
+		background: rgb(58, 58, 58);
+		color: white;
+		filter: invert(1);
+	}
+
+	html,
+	body {
+		@apply text-white;
+		background-color: $primaryColor;
+	}
+
+	.swiper {
+		.swiper-pagination {
+			.swiper-pagination-bullet {
+				background-color: #fff;
+			}
+		}
+	}
+
+	.blog-content {
+		.detailblog {
+			a:not(.wp-block-button__link) {
+				color: #fff;
+				text-decoration: underline;
+
+				&:hover,
+				&:active,
+				&:focus {
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+
+			.wp-block-button__link {
+				background-color: #fff;
+				border-color: #fff;
+				color: $primaryColor;
+
+				&:hover,
+				&:active,
+				&:focus {
+					@apply bg-white;
+					color: #000;
+				}
+			}
+		}
+	}
+
+	// Override TailwindCSS classes
+
+	#headerblock {
+		background-color: $primaryColor;
+
+		img {
+			filter: invert(1);
+		}
+
+		*[class^="header_nav_link_"] {
+			border-color: $primaryColor;
+		}
+
+		*[class^="header_nav_link_"]:hover {
+			@apply border-white;
+		}
+
+		*[class^="header_nav_link_active__"] {
+			@apply border-white;
+		}
+
+		#menu-toggle {
+			> div {
+				> span {
+					@apply bg-white;
+					color: $primaryColor;
+				}
+			}
+		}
+	}
+
+	#footerblock {
+		@apply text-white;
+		background-color: $primaryColor;
+
+		a {
+			color: #fff;
+			border-color: #fff;
+		}
+
+		*[class^="footer_footer_social_li_"] {
+			background-color: $secondaryColor;
+
+			a {
+				color: $tertiaryColor;
+			}
+		}
+
+		input {
+			@apply text-white;
+			background-color: $secondaryColor;
+			border-color: $secondaryColor;
+
+			&::placeholder {
+				color: $tertiaryColor;
+			}
+		}
+
+		button {
+			@apply text-white;
+			background-color: $secondaryColor;
+
+			svg,
+			path {
+				@apply fill-current;
+			}
+		}
+
+		label {
+			color: $quaternaryColor;
+		}
+
+		input,
+		select,
+		textarea {
+			@apply text-white;
+			background-color: $secondaryColor;
+			border-color: $secondaryColor;
+
+			&::placeholder {
+				color: $tertiaryColor;
+			}
+		}
+	}
+
+	#footerblockblack {
+		color: #fff;
+		background-color: $secondaryColor;
+
+		a {
+			color: #fff;
+			border-color: #fff;
+		}
+
+		*[class^="footer_footer_social_li_"] {
+			background-color: $primaryColor;
+
+			a {
+				color: $tertiaryColor;
+			}
+		}
+
+		input {
+			@apply text-white;
+			background-color: $primaryColor;
+			border-color: $primaryColor;
+
+			&::placeholder {
+				color: $tertiaryColor;
+			}
+		}
+
+		button {
+			@apply text-white;
+			background-color: $primaryColor;
+
+			svg,
+			path {
+				@apply fill-current;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.index {
+	position: relative;
+}
+
+.brtn {
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	border: 0;
+	display: inline-block;
+}
+
+.map {
+	min-height: 400px;
+}
+
+@media (min-width: 992px) {
+	.map {
+		min-height: 600px;
+	}
+
+	.iframeborder {
+		border-left-width: 40px;
+		border-right-width: 40px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.iframeborder {
+		border-left-width: 50px;
+		border-right-width: 50px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.iframeborder {
+		border-left-width: 50px;
+		border-right-width: 30vw;
+	}
+}
+
+@media (min-width: 1600px) {
+	.iframeborder {
+		border-left-width: 80px;
+	}
+}
