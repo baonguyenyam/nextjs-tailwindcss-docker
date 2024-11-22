@@ -4,7 +4,11 @@
   },
   "private": true,
   "version": "3.0.1",
-  "name": "nguyen-app",
+  "name": "nextjs-tailwindcss-docker",
+  "author": {
+    "name": "Nguyen Pham",
+    "email": "baonguyenyam@gmail.com"
+  },
   "scripts": {
     "dev": "npm run format && next dev -p 4000",
     "build": "next build",
@@ -42,7 +46,6 @@
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "@types/uuid": "^10.0.0",
-    "@vercel/postgres": "^0.10.0",
     "antd": "^5.22.2",
     "autoprefixer": "^10.4.20",
     "babel-plugin-react-compiler": "^19.0.0-beta-a7bf2bd-20241110",
