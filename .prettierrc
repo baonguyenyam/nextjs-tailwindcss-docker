@@ -1,7 +1,6 @@
 {
 	"bracketSpacing": true,
 	"bracketSameLine": true,
-	"jsxBracketSameLine": true,
 	"singleAttributePerLine": true,
 	"tabWidth": 4,
 	"useTabs": true,

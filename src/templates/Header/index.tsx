@@ -23,18 +23,6 @@ const MemoizedFontAwesomeIcon = React.memo(FontAwesomeIcon);
 
 export default function Header() {
 	const pathname = usePathname();
-	const [menuCP, setMenuCP] = useState(false);
-
-	// Event click outside of the menu
-	const handleClickOutside = (e: any) => {
-		const menuCP = document.getElementById("menuCP") as HTMLElement;
-		const menuCreate = document.getElementById("menu-create") as HTMLElement;
-		if (menuCP && menuCreate) {
-			if (!menuCP.contains(e.target) && !menuCreate.contains(e.target)) {
-				setMenuCP(false);
-			}
-		}
-	};
 
 	function toggleMenu() {
 		const idMenuClose = document.getElementById("idMenuClose") as HTMLElement;
@@ -81,12 +69,6 @@ export default function Header() {
 		// 		setIsModalOpen("autosubscribe");
 		// 	});
 		// }
-
-		// Scroll menu
-		document.addEventListener("mousedown", handleClickOutside);
-		return () => {
-			document.removeEventListener("mousedown", handleClickOutside);
-		};
 	}, []);
 
 	const iconProps = useMemo(

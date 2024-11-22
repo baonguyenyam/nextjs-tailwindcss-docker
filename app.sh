@@ -14,6 +14,10 @@ do
 	  sh app.sh
 	  break
 	  ;;
+	""Format"")
+	echo "\033[1;32mRunning Format app\033[0m"
+	  sh cmd/format.sh
+	  ;;
 	"Build")
 	echo "\033[1;32mRunning BUILD app\033[0m"
 	  sh cmd/build.sh

@@ -6,7 +6,6 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { Turnstile } from "@marsidev/react-turnstile";
 import { Modal } from "antd";
-import { useTheme } from "next-themes";
 
 import { site } from "@/app/const/const";
 import { setPageSchema } from "@/app/lib/utils";
@@ -16,7 +15,6 @@ import RootLayout from "@/templates/layout-root";
 import contact from "./contact.module.scss";
 
 export default function Contact(props?: any) {
-	const { theme } = useTheme();
 	const [isModalOpen, setIsModalOpen] = useState("");
 	const meta = props?.metadata;
 
