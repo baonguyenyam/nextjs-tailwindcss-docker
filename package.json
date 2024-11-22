@@ -7,7 +7,8 @@
   "name": "nextjs-tailwindcss-docker",
   "author": {
     "name": "Nguyen Pham",
-    "email": "baonguyenyam@gmail.com"
+    "email": "baonguyenyam@gmail.com",
+    "url": "https://nguyenpham.pro"
   },
   "scripts": {
     "dev": "npm run format && next dev -p 4000",
